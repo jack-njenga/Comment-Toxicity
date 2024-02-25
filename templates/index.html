@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XToxica</title>
+
+    <link rel="stylesheet" href="../static/styles/common.css">
+    <link rel="stylesheet" href="../static/styles/header.css">
+    <link rel="stylesheet" href="../static/styles/main.css">
+    <link rel="stylesheet" href="../static/styles/footer.css">
+
+    </style> -->
+</head>
+<body>
+    <header>
+        <section class="header">
+            <style>
+
+            </style>
+            <div class="logo">
+                <img id="menu-icon" onclick="toggleMenu()" src="../static/images/menu-icon.svg" alt="">
+                <div id="menu-container" class="menu-container">
+                    <div id="menu-nav" class="menu-nav">
+                        <h3>Menu</h3>
+                        <ul class="menu-links">
+                            <li><a href="http://192.168.100.70:5003/about">About Us</a></li>
+                            <li><a href="http://192.168.100.70:5003/contact">Contact Us</a></li>
+                            <li><a href="http://192.168.100.70:5003/help">How it works</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <a href="http://192.168.100.70:5003/">
+                    <img id="logo" src="../static/images/logo.jpeg" alt="Logo">
+                    <h2>XToxica</h2>
+                </a>
+            </div>
+            <!-- <div>
+                Spacer
+            </div> -->
+            <div class="links">
+                <ul class="quick-links">
+                    <li><a href="http://192.168.100.70:5003/about">About Us</a></li>
+                    <li><a href="http://192.168.100.70:5003/contact">Contact Us</a></li>
+                    <li><a href="http://192.168.100.70:5003/help">How it works</a></li>
+                </ul>
+            </div>
+            <div class="account">
+                <div class="sign-in">
+                    <button id="sign-in">Get Started</button>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="heading">
+                <h1>Unleashing Smart Comment Filtering for a Positive Digital Experience</h1>
+            </div>
+            <div class="sub-heading">
+                <h4>
+                    Detect and Filter Toxic Comments in Real-Time with XToxica. Enjoy a Safer Online Environment by Letting Our Advanced Model Identify and Mitigate Harmful Content.
+                </h4>
+            </div>
+        </section>
+
+        <style>
+
+        </style>
+        <section class="output">
+            <div class="output-container">
+                <div class="state">
+                    <span id="state">Banned</span>
+                </div>
+
+                <div class="output-viz">
+                    <div class="viz-container">
+                        <p id="toxic-percentage" class="percentage">0%</p>
+                        <span id="toxic-height" class="viz" style="height: 0px;"></span>
+                        <span class="base"></span>
+                        <div class="level">
+                            <p class="level">Toxic</p>
+                        </div>
+                    </div>
+                    <div class="viz-container">
+                        <p id="severe_toxic-percentage"  class="percentage">0%</p>
+                        <span id="severe_toxic-height" class="viz" style="height: 0px;"></span>
+                        <span class="base"></span>
+                        <div class="level">
+                            <p class="level">Severe Toxic</p>
+                        </div>
+
+                    </div>
+                    <div class="viz-container">
+                        <p id="obscene-percentage"  class="percentage">0%</p>
+                        <span id="obscene-height" class="viz" style="height: 0px;"></span>
+                        <span class="base"></span>
+                        <div class="level">
+                            <p class="level">Obscene</p>
+                        </div>
+                    </div>
+                    <div class="viz-container">
+                        <p id="threat-percentage"  class="percentage">0%</p>
+                        <span id="threat-height" class="viz" style="height: 0px;"></span>
+                        <span class="base"></span>
+                        <div class="level">
+                            <p class="level">Threat</p>
+                        </div>
+                    </div>
+                    <div class="viz-container">
+                        <p id="insult-percentage"  class="percentage">0%</p>
+                        <span id="insult-height" class="viz" style="height: 0px;"></span>
+                        <span class="base"></span>
+                        <div class="level">
+                            <p class="level">Insult</p>
+                        </div>
+                    </div>
+                    <div class="viz-container">
+                        <p id="identity_hate-percentage"  class="percentage">0%</p>
+                        <span id="identity_hate-height" class="viz" style="height: 0px;"></span>
+                        <span class="base"></span>
+                        <div class="level">
+                            <p class="level">Identity Hate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="input">
+            <div class="description">
+                <h3>See How It Works</h3>
+                <p>* Don't provide senstive info *</p>
+            </div>
+            <div class="input-container">
+                <input id="input-text" type="text" placeholder="Type any comment..." required onkeydown="handleKeyDown(event)">
+                <button id="input-submit" onclick="submitRequest()">submit</button>
+            </div>
+        </section>
+
+        <div class="design">
+            <!-- <img src="../static/images/homepage_design.jpg" alt=""> -->
+        </div>
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div class="more-info">
+                <div class="more-links">
+                    <ul>
+                        <li><a href="http://192.168.100.70:5003/about">About Us</a></li>
+                        <li><a href="http://192.168.100.70:5003/contact">Contact Us</a></li>
+                        <li><a href="http://192.168.100.70:5003/help">How it works</a></li>
+                    </ul>
+                </div>
+                <div class="about">
+                    <p>
+                        XToxica is committed to creating a positive online experience. Our advanced toxicity detection model works tirelessly to filter harmful comments. Your safety is our priority.
+                    </p>
+                </div>
+            </div>
+            <div class="terms">
+                <a href="#">&copy; XToxica 2024, Nairobi</a>
+            </div>
+
+        </section>
+    </footer>
+
+<script src="../static/scripts/header.js"></script>
+<script src="../static/scripts/worker.js"></script>
+</body>
+</html>
