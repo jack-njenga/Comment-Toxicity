@@ -2,7 +2,7 @@
 
 Welcome to XToxica
 <br>
-[Test Out the XToxica](http://165.227.180.150:5000/)
+[Test Out Our Model](http://165.227.180.150:5000/)
 
 ## Overview
 
